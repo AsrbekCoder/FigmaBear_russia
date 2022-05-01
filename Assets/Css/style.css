@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada&family=Roboto&display=swap");
+@import "./components/index.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: initial;
+  font-weight: inherit;
+}
+
+[class*="_container"] {
+  max-width: 1070px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (max-width: 969.98px) {
+  [class*="_container"] {
+    max-width: inherit;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn {
+  width: 350px;
+  height: 72px;
+  background-color: rgba(183, 210, 113, 1);
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  letter-spacing: 1px;
+  background-color: rgb(142, 175, 60);
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  transform: translateY(10px);
+  transition: 0.2s ease-in-out;
+}
+.burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #000;
+  box-shadow: 0 10px 0 #000;
+  transform: translateY(-10px);
+  transition: 0.2s ease-in-out;
+}
+
+.burger.active::before {
+  transform: rotate(45deg);
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+  box-shadow: 0 0 0 #000;
+}
