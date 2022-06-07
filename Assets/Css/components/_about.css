@@ -1,0 +1,43 @@
+.about {
+  position: relative;
+  margin-top: 153px;
+  width: 100%;
+}
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_title {
+  max-width: 60%;
+}
+.about_head-title h1 {
+  font-size: 48px;
+  color: rgba(44, 111, 47, 1);
+  font-weight: 700;
+}
+.about_head-title p {
+  font-size: 36px;
+  margin: 43px 0;
+}
+.about_img {
+  max-width: 40%;
+}
+.about_img img {
+  object-fit: cover;
+  width: 605px;
+}
+
+.ping_items {
+  position: absolute;
+  top: 448px;
+  left: 0;
+  width: 456px;
+}
+.ping_items1 {
+  position: absolute;
+  transform: rotate(190deg);
+  right: -65px;
+  top: 448px;
+  width: 456px;
+}

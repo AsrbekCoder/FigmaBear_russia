@@ -100,3 +100,9 @@ button {
   transform: rotate(-45deg);
   box-shadow: 0 0 0 #000;
 }
+
+@media screen and (min-width: 866.98px) {
+  .burger {
+    display: none;
+  }
+}

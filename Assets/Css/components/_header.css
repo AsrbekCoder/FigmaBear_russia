@@ -4,7 +4,9 @@
   left: 0;
   width: 100%;
   padding: 35px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .header_container {
   display: flex;
   justify-content: space-between;
